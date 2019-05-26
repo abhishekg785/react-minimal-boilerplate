@@ -8,7 +8,7 @@ const HtmlPlugin = require('html-webpack-plugin')
 const root = path.resolve()
 const dist = path.resolve('dist')
 
-module.exports = ({ mode }) => {
+module.exports = ({ mode } = { mode: 'production' }) => {
   const isDev = mode !== 'production';
 
   const config = {
