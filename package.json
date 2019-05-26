@@ -6,8 +6,8 @@
   "author": "abhishek goswami <abhishekg785@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
-    "build": "webpack --env prod --mode production",
+    "start": "webpack-dev-server --env.mode development",
+    "build": "webpack --env.mode production",
     "flow": "flow check",
     "lint": "eslint src"
   },

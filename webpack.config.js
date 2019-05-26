@@ -8,10 +8,11 @@ const HtmlPlugin = require('html-webpack-plugin')
 const root = path.resolve()
 const dist = path.resolve('dist')
 
-module.exports = (env) => {
-  const isDev = env !== 'prod'
+module.exports = ({ mode }) => {
+  const isDev = mode !== 'production';
 
   const config = {
+    mode,
     context: root,
     entry: {
       app: './src/index',
